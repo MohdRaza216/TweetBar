@@ -10,7 +10,7 @@ TweetBar
 {% for tweet in tweets %}
 <div class="card" style="width: 18rem;"> 
     {% if tweet.photo %}
-    <img src="{{ tweet.photo.url }}" class="card-img-top" alt="images">
+    <img src="{{ tweet.photo.url }}" class="card-img-top" alt="tweet_img">
     {% endif %}
 <div class="card-body">
 <h6 class = "card-title">{{tweet.user.username}}</h6>
