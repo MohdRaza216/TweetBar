@@ -4,11 +4,11 @@ TweetBar
 {% endblock %}
 
 {% block content %}
-<h1 class = ' text-center mt-5 '> Welcome to TweetBar</h1>
-<a class="btn btn-primary mb-5" href="{% url 'tweet_create'%}">Create a tweet</a>
-<div class= "container row gap-3">
+<h1 class = ' text-center my-5'> Welcome to TweetBar</h1>
+<a class="btn btn-primary mb-5 mx-2" href="{% url 'tweet_create'%}">Create a tweet</a>
+<div class= "flex-container row gap-5 mb-5 justify-content-between ">
 {% for tweet in tweets %}
-<div class="card" style="width: 18rem;"> 
+<div class="card p-3 border border-3 " style="width: 18rem;"> 
     {% if tweet.photo %}
     <img src="{{ tweet.photo.url }}" class="card-img-top" alt="tweet_img">
     {% endif %}
