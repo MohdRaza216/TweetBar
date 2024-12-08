@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['<your-backend-service-name>.onrender.com']
+ALLOWED_HOSTS = ['https://tweetbar.onrender.com']
 
 
 # Application definition
